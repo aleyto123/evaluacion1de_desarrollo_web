@@ -1,1 +1,3 @@
-# evaluacion1de_desarrollo_web
+# Primera evaluación del curso de: Desarrollo De Aplicaciones Web 
+Estudiante: Bellido Chambi Rony Widmer
+Base de datos: 
