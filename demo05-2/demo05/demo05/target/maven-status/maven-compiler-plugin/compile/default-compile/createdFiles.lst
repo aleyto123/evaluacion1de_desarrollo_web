@@ -1,0 +1,15 @@
+com\tecsup\demo05\controller\PacienteController.class
+com\tecsup\demo05\repository\PacienteRepository.class
+com\tecsup\demo05\repository\CitaRepository.class
+com\tecsup\demo05\model\Cita.class
+com\tecsup\demo05\service\PacienteService.class
+com\tecsup\demo05\model\Especialidad.class
+com\tecsup\demo05\service\MedicoService.class
+com\tecsup\demo05\controller\CitaController.class
+com\tecsup\demo05\Demo05Application.class
+com\tecsup\demo05\repository\JpaRepository.class
+com\tecsup\demo05\service\CitaService.class
+com\tecsup\demo05\repository\MedicoRepository.class
+com\tecsup\demo05\model\Medico.class
+com\tecsup\demo05\model\Paciente.class
+com\tecsup\demo05\repository\EspecialidadRepository.class

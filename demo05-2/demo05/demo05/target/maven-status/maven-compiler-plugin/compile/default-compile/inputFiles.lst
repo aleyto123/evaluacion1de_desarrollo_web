@@ -1,0 +1,15 @@
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\controller\CitaController.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\controller\PacienteController.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\Demo05Application.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\model\Cita.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\model\Especialidad.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\model\Medico.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\model\Paciente.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\repository\CitaRepository.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\repository\EspecialidadRepository.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\repository\JpaRepository.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\repository\MedicoRepository.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\repository\PacienteRepository.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\service\CitaService.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\service\MedicoService.java
+C:\Users\Alumno\Downloads\demo05\demo05\src\main\java\com\tecsup\demo05\service\PacienteService.java

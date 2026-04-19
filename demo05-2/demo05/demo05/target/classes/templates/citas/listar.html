@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Citas - Clínica Tecsup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div th:replace="~{layout/navbar :: menu}"></div>
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">Control de Citas Médicas</h4>
+            <a th:href="@{/citas/nuevo}" class="btn btn-light btn-sm fw-bold">➕ Agendar Cita</a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Paciente</th>
+                        <th>Médico (Especialidad)</th>
+                        <th>Estado</th>
+                        <th class="text-center">Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="c : ${citas}">
+                        <td th:text="${c.fecha}"></td>
+                        <td th:text="${c.hora}"></td>
+                        <td th:text="${c.paciente.nombre + ' ' + c.paciente.apellido}"></td>
+                        <td th:text="${c.medico.nombre + ' (' + c.medico.especialidad.nombre + ')'}"></td>
+                        <td>
+                                    <span th:class="${c.estado == 'Pendiente' ? 'badge bg-warning text-dark' :
+                                                    (c.estado == 'Atendida' ? 'badge bg-success' : 'badge bg-danger')}"
+                                          th:text="${c.estado}"></span>
+                        </td>
+                        <td class="text-center">
+                            <a th:href="@{/citas/eliminar/{id}(id=${c.id})}"
+                               class="btn btn-sm btn-outline-danger"
+                               onclick="return confirm('¿Estás seguro de eliminar esta cita?')">
+                                Eliminar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr th:if="${#lists.isEmpty(citas)}">
+                        <td colspan="6" class="text-center text-muted">No hay citas registradas actualmente.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
